@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile | Admin - Users</title>
+    <link rel="icon" type="image/png" href="../img/project1.png" sizes="16x16">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        .navbar .navbar-brand img{margin-top: -5px; background-color: white;}
+        .bag{
+            background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        aside .active{background-color: #EBEEF3;border-top-left-radius: 50px; border-bottom-left-radius: 50px;color: #000!important;S}
+        
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow">
+        <a class="navbar-brand" href="#">
+            <img src="../img/project1.png" class="rounded-circle border border-light" width="40" height="25" alt="image">
+        <span class="font-weight-bolder pt-2">AUTO<span class="text-warning">MOBILE</span></span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggeler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="btn btn-danger">LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <!-- ./ Ending of NAVBAR -->
+      <!-- Main Section -->
+      <div class="container-fluid section">
+          <div class="row" style="height: calc(100vh - 56px)">
+
+              <!-- Left Side Bar -->
+              <aside class="col-xl-2 col-md-3 bg-dark py-4 pr-0">
+                  <div class="sidebar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link text-white"><i class="fa fa-tachometer-alt mr-2"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="creatCategory.html" class="nav-link text-white"><i class="fa fa-sliders-h mr-2"></i> Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="createImage.html" class="nav-link text-white"><i class="fa fa-upload mr-2"></i> Upload Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="viewImage.html" class="nav-link text-white"><i class="fa fa-eye mr-2"></i> View Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="users.html" class="nav-link text-white"><i class="fa fa-users mr-2"></i> Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link text-white"><i class="fa fa-id-badge mr-2"></i> Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="feedback.html" class="nav-link text-white active"><i class="fa fa-comments mr-2"></i> Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="archive.html" class="nav-link text-white"><i class="fa fa-archive mr-2"></i> Archieve</a>
+                        </li>
+                    </ul>
+                  </div>
+              </aside>
+              <!-- ./ Left Side Bar -->
+
+              <!-- Main Bar -->
+              <main class="col-xl-10 bag col-md-9 py-4">
+                  <div class="mainbar">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <h2>FEEDBACK</h2>
+                        </div>
+                        <div class="col">
+                            <ul class="breadcrumb bg-transparent float-right">
+                                <li class="breadcrumb-item text-dark font-weight-bolder"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active text-dark font-weight-bolder">Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 my-2">
+                            <table class="table table-bordered border ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-center">SR.NO.</th>
+                                        <th class="text-center">NICKNAME</th>
+                                        <th class="text-center">REASON FOR RATING</th>
+                                        <th class="text-center">COMMENTS</th>
+                                        <th class="text-center">RATING </th>
+                                        <th class="text-center">GIVEN BY</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center">NIHAL D ABHYANKAR</td>
+                                        <td class="text-center">nihaldabhyankar@gmail.com</td>
+                                        <td class="text-center">NAGPUR</td>
+                                        <td class="text-center">9987651493</td>
+                                        <td class="text-center">
+                                            <a href="delete.html" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i> DELETE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-center">JON DOE</td>
+                                        <td class="text-center">jondoe@gmail.com</td>
+                                        <td class="text-center">NAGPUR</td>
+                                        <td class="text-center">5898576219</td>
+                                        <td class="text-center">
+                                            <a href="delete.html" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i> DELETE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="text-center">SACHIN</td>
+                                        <td class="text-center">sachin@gmail.com</td>
+                                        <td class="text-center">NAGPUR</td>
+                                        <td class="text-center">2158763258</td>
+                                        <td class="text-center">
+                                            <a href="delete.html" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i> DELETE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">VIRAT</td>
+                                        <td class="text-center">virat@gmail.com</td>
+                                        <td class="text-center">NAGPUR</td>
+                                        <td class="text-center">6589321754</td>
+                                        <td class="text-center">
+                                            <a href="delete.html" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i> DELETE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">ROHIT</td>
+                                        <td class="text-center">roit@gmail.com</td>
+                                        <td class="text-center">NAGPUR</td>
+                                        <td class="text-center">7596158476</td>
+                                        <td class="text-center">
+                                            <a href="delete.html" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i> DELETE</a>
+                                        </td>
+                                    </tr>
+
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                  </div>
+              </main>
+              <!-- ./ Main Bar -->
+
+          </div>
+      </div>
+      <!-- ./ Main Section -->
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

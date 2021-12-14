@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile | Admin - View Image</title>
+    <link rel="icon" type="image/png" href="../img/project1.png" sizes="16x16">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        .navbar .navbar-brand img{margin-top: -5px; background-color: white;}
+        .bag{
+            background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        aside .active{background-color: #EBEEF3;border-top-left-radius: 50px; border-bottom-left-radius: 50px;color: #000!important;}
+        main .card .card-body{opacity:0;transition: all .25s linear;}
+        main .card img{transition: filter .25s linear;}
+        main .card:hover img{filter: blur(3px);}
+        main .card:hover .card-body{opacity: 1;}
+        .card{
+            box-shadow: 3px 3px 3px grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow">
+        <a class="navbar-brand" href="#">
+            <img src="../img/project1.png" alt="Logo" class="rounded-circle border border-light" width="40" height="24">
+            <span class="font-weight-bolder pt-2">AUTO<span class="text-warning">MOBILE</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="btn btn-danger" href="logout.html">LOGOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ./ Ending of NAVBAR -->
+      <!-- Main Section -->
+      <div class="container-fluid section">
+          <div class="row" style="height: calc(100vh - 56px)">
+
+              <!-- Left Side Bar -->
+              <aside class="col-xl-2 col-md-3 bg-dark py-4 pr-0 sticky">
+                  <div class="sidebar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link text-white"><i class="fa fa-tachometer-alt mr-2"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="creatCategory.html" class="nav-link text-white"><i class="fa fa-sliders-h mr-2"></i> Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="createImage.html" class="nav-link text-white"><i class="fa fa-upload mr-2"></i> Upload Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="viewImage.html" class="nav-link text-white active"><i class="fa fa-eye mr-2"></i> View Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="users.html" class="nav-link text-white"><i class="fa fa-users mr-2"></i> Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link text-white"><i class="fa fa-id-badge mr-2"></i> Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="feedback.html" class="nav-link text-white"><i class="fa fa-comments mr-2"></i> Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="archieve.html" class="nav-link text-white"><i class="fa fa-archive mr-2"></i> Archieve</a>
+                        </li>
+                    </ul>
+                  </div>
+              </aside>
+              <!-- ./ Left Side Bar -->
+
+              <!-- Main Bar -->
+              <main class="col-xl-10 bag col-md-9 py-4">
+                  <div class="mainbar">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <h2>View Images</h2>
+                        </div>
+                        <div class="col">
+                            <ul class="breadcrumb bg-transparent float-right">
+                                <li class="breadcrumb-item text-dark font-weight-bolder"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item text-dark font-weight-bolder"><a href="createImage.html">Uploading</a></li>
+                                <li class="breadcrumb-item active text-dark font-weight-bolder">View Images</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
+                        <div class="col my-2">
+                            <div class="card">
+                                <img src="../img/jupi1.png" alt="" class="card-img" height="200">
+                                <div class="card-body w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="editImage.html" class="btn btn-success mr-2"><i class="fa fa-edit"></i> Edit</a>
+                                    <a href="delete.html" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="card">
+                                <img src="../img/gusto.png" alt="" class="card-img" height="200">
+                                <div class="card-body w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="editImage.html" class="btn btn-success mr-2"><i class="fa fa-edit"></i> Edit</a>
+                                    <a href="delete.html" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="card">
+                                <img src="../img/mestro.jpg" alt="" class="card-img" height="200">
+                                <div class="card-body w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="editImage.html" class="btn btn-success mr-2"><i class="fa fa-edit"></i> Edit</a>
+                                    <a href="delete.html" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="card">
+                                <img src="../img/mestro1.jpg" alt="" class="card-img" height="200">
+                                <div class="card-body w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="editImage.html" class="btn btn-success mr-2"><i class="fa fa-edit"></i> Edit</a>
+                                    <a href="delete.html" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="card">
+                                <img src="../img/jupiter.jpg" alt="" class="card-img" height="200">
+                                <div class="card-body w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="editImage.html" class="btn btn-success mr-2"><i class="fa fa-edit"></i> Edit</a>
+                                    <a href="delete.html" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="card">
+                                <img src="../img/jupi3.jpg" alt="" class="card-img" height="200">
+                                <div class="card-body w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="editImage.html" class="btn btn-success mr-2"><i class="fa fa-edit"></i> Edit</a>
+                                    <a href="delete.html" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </main>
+              <!-- ./ Main Bar -->
+
+          </div>
+      </div>
+      <!-- ./ Main Section -->
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
